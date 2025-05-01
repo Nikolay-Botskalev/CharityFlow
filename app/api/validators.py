@@ -13,7 +13,7 @@ async def check_name_duplicate(
 ) -> None:
     """
     Функция проверяет уникальность полученного имени проекта.
-    При неуникальности имени вызывается ошибка 422.
+    При неуникальности имени вызывается ошибка 400.
     """
 
     room_id = await project_crud.get_project_id_by_name(project_name, session)
