@@ -3,7 +3,7 @@ from datetime import datetime
 
 from aiogoogle import Aiogoogle
 
-from app.constants import FORMAT, SPREADSHEET_BODY, SPREADSHEET_URL
+from app.constants import FORMAT, SPREADSHEET_BODY
 from app.core.config import settings
 
 
@@ -16,7 +16,7 @@ async def spreadsheets_create(wrapper_services: Aiogoogle) -> tuple[str, str]:
         service.spreadsheets.create(json=spreadsheet_body)
     )
     spreadsheet_id = response['spreadsheetId']
-    spreadsheet_url = SPREADSHEET_URL + spreadsheet_id
+    spreadsheet_url = response['spreadsheetUrl']
     return spreadsheet_id, spreadsheet_url
 
 

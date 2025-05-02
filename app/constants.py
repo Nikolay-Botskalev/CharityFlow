@@ -21,6 +21,3 @@ SPREADSHEET_BODY = {
         'title': 'Лист1',
         'gridProperties': {'rowCount': 100, 'columnCount': 11}}}]
 }
-
-# Постоянная часть ссылки на созданный документ
-SPREADSHEET_URL = 'https://docs.google.com/spreadsheets/d/'

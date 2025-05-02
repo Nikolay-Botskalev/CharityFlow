@@ -31,9 +31,9 @@ async def get_close_project(
     try:
         await spreadsheets_update_value(spreadsheet_id,
                                         projects, wrapper_services)
-    except Exception:
+    except ValueError:
         raise HTTPException(
             status_code=HTTPStatus.BAD_REQUEST,
-            detail='В данный момент таблица не доступна',
+            detail='Ошибка при обновлении таблицы',
         )
     return spreadsheet_url

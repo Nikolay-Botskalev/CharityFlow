@@ -5,8 +5,8 @@ from app.constants import GOOGLE_AUTH_URL
 from app.core.config import settings
 
 SCOPES = [
-    GOOGLE_AUTH_URL + 'spreadsheets',
-    GOOGLE_AUTH_URL + 'drive'
+    f'{GOOGLE_AUTH_URL}spreadsheets',
+    f'{GOOGLE_AUTH_URL}drive'
 ]
 
 INFO = {
