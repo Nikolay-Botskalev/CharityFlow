@@ -74,4 +74,31 @@
     .../google/
     ```
 
+## Заполнение .env
+
+1. В корне директории создайте файл .env
+
+2. Заполните файл по следующему шаблону, используя необходимые данные:
+```
+DESCRIPTION=<описание проекта>
+DATABASE_URL=<пример: sqlite+aiosqlite:///./fastapi.db>
+SECRET=<secret>
+FIRST_SUPERUSER_EMAIL= <email суперпользователя>
+FIRST_SUPERUSER_PASSWORD= <пароль суперпользователя>
+EMAIL=<email пользователя>
+# Данные сервисного аккаунта:
+TYPE=<>
+PROJECT_ID=<>
+PRIVATE_KEY_ID=<>
+PRIVATE_KEY=<>
+CLIENT_EMAIL=<>
+CLIENT_ID=<>
+AUTH_URI=<>
+TOKEN_URI=<>
+AUTH_PROVIDER_X509_CERT_URL=<>
+CLIENT_X509_CERT_URL=<>
+UNIVERSE_DOMAIN=<>
+```
+
+
 ## [Автор](https://github.com/Nikolay-Botskalev)
