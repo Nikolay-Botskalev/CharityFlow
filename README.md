@@ -1,4 +1,4 @@
-# Проект QRkot_spreadseets
+# Проект CharityFlow
 
 ## Описание проекта
 
@@ -12,7 +12,7 @@
 1. Клонирование репозитория
     В рабочей папке выполнить команду:
     ```
-    git_clone https://github.com/Nikolay-Botskalev/QRkot_spreadsheets
+    git_clone https://github.com/Nikolay-Botskalev/CharityFlow
     ```
 
 2. Создание виртуального окружения
